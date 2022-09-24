@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Clone</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page_action_container">
+        <div class="page_action">Home</div>
+        <div class="page_action selected_page_action">File</div>
+        <div class="page_action">Insert</div>
+        <div class="page_action">Layout</div>
+        <div class="page_action">Help</div>
+    </div>
+    <div class="menu_bar">
+        <div class="new_open_save_container">
+            <div class="icon_container copy">
+                <i class="far fa-copy"></i>
+            </div>
+            <div class="icon_container cut">
+                <i class="far fa-cut"></i>
+            </div>
+            <div class="icon_container paste">
+                <i class="far fa-clipboard"></i>
+            </div>
+        </div>
+        <div class="formatting_container">
+            <select class="font_family_input">
+                <option value="Calibri">Calibri</option>
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+            <select class="font_size_input">
+                <option value="14">14</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="24">24</option>
+            </select>
+
+        </div>
+        <div class="bui_container">
+            <span class="bold">
+                <i class="fas fa-bold"></i>
+            </span>
+            <span class="italic">
+                <i class="fas fa-italic"></i>
+            </span>
+            <span class="underline">
+                <i class="fas fa-underline"></i>
+            </span>
+
+        </div>
+        <!-- bold italic underline  -->
+        <!-- colors-->
+        <div class="alignment_container">
+            <span class="alignment">
+                <i class="left fas fa-align-left"></i>
+            </span>
+            <span class="alignment">
+                <i class="center fas fa-align-center"></i>
+            </span>
+            <span class="alignment">
+                <i class="right fas fa-align-right "></i>
+            </span>
+        </div>
+        <!-- alignment -->
+        <div class="color_container">
+            <i class="fas fa-tint"></i>
+            <input type="color" class="fontColor">
+        </div>
+        <div class="color_container ">
+            <i class="fas fa-fill-drip"></i>
+            <input type="color" class="BGcolor">
+        </div>
+        <div class="download">
+            <i class="fas fa-cloud-download-alt"></i>
+        </div>
+        <div class="upload">
+            <i class="fas fa-cloud-upload-alt"></i>
+        </div>
+    </div>
+    <!-- ******formula bar***** -->
+    <div class="formula_bar">
+        <input type="text" class="address_input">
+        <img src="pngwing.com.png" alt="">
+        <input type="text" class="formula_input" placeholder="formula">
+
+    </div>
+
+    <div class="grid_container">
+        <div class="top_left_cell"></div>
+        <div class="top_row"></div>
+        <div class="left_col"></div>
+        <div class="grid"></div>
+    </div>
+
+    <div class="sheets_container">
+        <div class="sheet_add_icon">
+            <i class="far fa-plus-square"></i>
+        </div>
+        <div class="sheet_folder_container"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="cycleTrace.js"></script>
+    <script src="cycleDetection.js"></script>
+    <script src="sheetsHandling.js"></script>
+    <script src="menu.js"></script>
+    <script src="formula.js"></script>
+    <script src="cutCopyPaste.js"></script>
+    <script src="openSave.js"></script>
+      
+</body>
+</html>
